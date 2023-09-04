@@ -15,31 +15,31 @@
             <h2 id="heading">Form Validation</h2>
             <div class="input-group">
                 <label>Full Name</label>
-                <input type="text" placeholder="enter your name">
+                <input type="text" placeholder="enter your name" id="contact-name" onkeyup="validateName()">
                 <span id="name-error"></span>
             </div>
 
 
             <div class="input-group">
                 <label>Phone No.</label>
-                <input type="tel" placeholder="012 345 6789">
+                <input type="tel" placeholder="012 345 6789" id="contact-phone" onkeyup="validatePhone()">
                 <span id="phone-error"></span>
             </div>
 
 
             <div class="input-group">
                 <label>Email Id</label>
-                <input type="email" placeholder="enter email">
+                <input type="email" placeholder="enter email" id="contact-email" onkeyup="validateEmail()">
                 <span id="email-error"></span>
             </div>
 
             <div class="input-group">
                 <label>Your message</label>
-                <textarea rows="5" placeholder="enter your message"></textarea>
+                <textarea rows="5" placeholder="enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
                 <span id="message-error"></span>
             </div>
 
-            <button>Submit</button>
+            <button onclick="return validateForm()">Submit</button>
             <span id="submit-error"></span>
         </form>
     </div>
